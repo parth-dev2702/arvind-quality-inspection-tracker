@@ -1,16 +1,36 @@
-# React + Vite
+# Frontend - Arvind Quality Inspection Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This folder contains the React frontend application for the Arvind Quality Inspection Tracker.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** React 19 (Vite)
+- **State & Data Fetching:** TanStack Query (React Query v5)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
 
-## React Compiler
+## Running the Frontend Separately
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+If you want to run the frontend client by itself:
 
-## Expanding the Oxlint configuration
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+2. **Start the Vite dev server:**
+   ```bash
+   npm run dev
+   ```
+
+The app will run at `http://localhost:3000` and proxy API calls (`/api/*`) to the backend server running at `http://localhost:5000`.
+
+## Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+The output files will be generated in the `dist` folder.
