@@ -95,9 +95,12 @@ curl -X POST http://localhost:5000/api/sap-webhook \
 
 ---
 
-## What I Would Improve With More Time
+## What I Would Add Next
 
-1. **Real-time Updates (WebSockets):** Use Socket.io so new defects (like SAP alerts) appear live on the screen without periodic polling.
-2. **Photo Uploads:** Add camera/image upload support so supervisors can take pictures of defects directly on the shop floor.
-3. **PWA Support:** Add a service worker so supervisors can install the app on Android/iOS phones.
-4. **Role Permissions:** Add separate permissions for operators, supervisors, and plant managers.
+1. **Real-time updates:** Add WebSocket support so supervisors can see new inspections as they are created.
+
+2. **Photo attachments:** Add the option to capture or upload a photo of the defect during inspection.
+
+3. **PWA support:** Make the application installable on mobile devices for easier access on the shop floor.
+
+4. **Role-based access:** Add separate permissions for operators, supervisors, and plant managers.
